@@ -14,7 +14,6 @@ class Square(object):
 
 
 app = Flask(__name__)
-STATIC_FILES="file:///home/martin/Programming/Python/gridBoard/static/"
 
 @app.route('/')
 def index():
@@ -43,18 +42,3 @@ def index():
 
     return render_template('index.html', projects=projects)
 
-
-#@app.route('/move_issue', methods=['GET', 'POST'])
-#def move_issue():
-#    from_column = request.form['from_column']
-#    to_column = request.form['to_column']
-#    issue = request.form['issue']
-#    position_before = request.form['position_before']
-#
-#    redis.lrem(from_column, issue)
-#    if position_before != '': 
-#        redis.linsert(to_column, 'before', position_before, issue)
-#    else: 
-#        redis.rpush(to_column, issue)
-#
-#    return from_column + ' ' + to_column
