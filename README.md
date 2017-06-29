@@ -3,19 +3,19 @@
 
 ## Local setup:
 
-  Fork project from github and clone it:
+#####  Fork project from github and clone it:
   
   ```
   git clone <git-repository>
   ```
 
   
-  go to repository:
+#####  go to repository:
   ```
   cd GridBoard
   ```
   
-  create virtualenv:
+#####  create virtualenv:
 ```
 mkdir gridboard-dev
 virtualenv gridboard-dev
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 
 
-run server:
+##### run server:
 ```
 export FLASK_APP=server.py && flask run --host=0.0.0.0
 ```
