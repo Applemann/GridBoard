@@ -1,0 +1,9 @@
+version: "3"
+services:
+  application:
+    image: teamzeus/gridboard:latest
+    container_name: gridboard
+    ports:
+       - "5000:5000"
+    environment:
+       - FLASK_APP=server.py
