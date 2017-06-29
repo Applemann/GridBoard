@@ -12,7 +12,7 @@
   
   go to repository:
   ```
-  cd gridboard
+  cd GridBoard
   ```
   
   create virtualenv:
